@@ -1,0 +1,48 @@
+# Análise de Vendas com Streamlit
+Este projeto é um painel interativo desenvolvido com **Streamlit** para realizar a análise de vendas a partir de um arquivo Excel. Ele permite ao usuário carregar seus próprios dados e visualizar métricas importantes por categoria, produto e ao longo do tempo.
+
+## Funcionalidades
+
+- Upload de arquivo Excel (.xlsx)
+- Exibição dos dados carregados
+- Gráfico de barras: Receita por Categoria
+- Gráfico de linhas: Receita ao longo do tempo
+- Gráfico de pizza: Receita por Produto
+
+## Estrutura esperada do arquivo Excel
+
+O arquivo deve conter uma planilha com os seguintes campos a partir da segunda linha (cabeçalho na linha 2):
+
+- Data (formato de data)
+- Categoria
+- Produto
+- Quantidade
+- Preço Unitário
+- Receita (valores numéricos)
+
+Exemplo de cabeçalho:
+| Data       | Categoria   | Produto       |Quantidade | Preço Unitario |Receita |
+|------------|-------------|---------------|-----------|----------------|--------
+| 2025-01-01 | Eletrônicos |Fone de ouvido |10         |20              |150.00  |
+
+---
+
+## Como executar localmente
+
+-> Pré-requisitos
+
+- Python instalado (versão 3.7 ou superior)
+
+Bibliotecas Python necessárias: 
+- Streamlit = Usada para criar a aplicação web
+- Pandas = Usada para manipulação, limpeza, trasnformação e a análise dos dados
+- Plotly Express = Usada para a criação de gráficos interativos
+- Openpyxl = Usada para ler arquivos .xlsx
+
+-> Passo a passo para executar o código
+
+1 - Realize o download do arquivo index.py na máquina
+2 - Abra o arquivo em uma ferramenta de edição de código (utilizei o vscode)
+3 - Realize a instalação das bibliotecas, utilizando o comando: pip install + 'nome da biblioteca'
+4 - No terminal (sendo o CMD da máquina ou o terminal do vscode), utilizar o comando: streamlit run index.py para executar o código
+5 - O mesmo será aberto no navegador e é só inserir a base de dados (contém uma no repositório para donwload) e verificar os gráficos
